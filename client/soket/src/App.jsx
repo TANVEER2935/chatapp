@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
 // Connect to backend server
-const socket = io("http://localhost:3000");
+const socket = io("chatapp-production-a600.up.railway.app");
 
 const App = () => {
   const [message, setMessage] = useState("");
